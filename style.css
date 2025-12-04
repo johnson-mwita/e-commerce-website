@@ -1,0 +1,90 @@
+ 
+ /* Search button custom color */
+.search-btn {
+    background-color: hsl(26, 88%, 55%);
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: white;
+    color: hsl(26, 88%, 55%);
+    border: 1px solid hsl(26, 88%, 55%);
+}
+ 
+  
+  /* Black Friday Banner */
+
+.black-friday-banner {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  animation: bfFlash 1.2s infinite alternate ease-in-out;
+  box-shadow: 0px 0px 15px rgba(255, 126, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Heading animation */
+.black-friday-banner h1 {
+  animation: bounceText 1s infinite ease-in-out;
+}
+
+/* Background Flash Effect */
+@keyframes bfFlash {
+  0% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: hsl(26, 88%, 55%);
+    color: black;
+  }
+}
+
+/* Bouncing Text Animation */
+@keyframes bounceText {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* product category banner */
+.black-friday-banner {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    animation: bfFlash 1.2s infinite alternate ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 126, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  /* Heading animation */
+  .black-friday-banner h1 {
+    animation: bounceText 1s infinite ease-in-out;
+  }
+  
+  /* Background Flash Effect */
+  @keyframes bfFlash {
+    0% {
+      background-color: black;
+      color: white;
+    }
+    100% {
+      background-color: hsl(26, 88%, 55%);
+      color: black;
+    }
+  }
+  
+  /* Bouncing Text Animation */
+  @keyframes bounceText {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.08);
+    }
+  }

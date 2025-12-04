@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Payment</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .payment-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .payment-container h2 {
+      color: green;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-pay {
+      background-color:green;
+      color:greenyellow;
+      width: 100%;
+      font-weight: bold;
+    }
+    .btn-pay:hover {
+      background-color: green;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-container">
+    <h2>make payment</h2>
+
+    <!-- Credit Card Form -->
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="eg.Johnson mwita" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="mpesaNumber" class="form-label">mpesa number</label>
+        <input type="text" class="form-control" id="mpesaNumber" placeholder="0742348200" required>
+      </div>
+ 
+      <div class="mb-4">
+        <label for="amount" class="form-label">Amount</label>
+        <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+      </div>
+
+      <button type="submit" class="btn btn-pay">Pay Now</button>
+    </form>
+
+    <hr class="my-4">
+
+    <!-- airtel money button -->
+    <div class="text-center">
+      <p>or pay with ATM card</p>
+      <button class="btn btn-outline-primary w-100"><i class="bi bi-ATM CARD"></i>ATM CARD</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

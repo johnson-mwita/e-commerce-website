@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login to My Account</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .login-card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .google-btn {
+      background: #fff;
+      color: #444;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: background 0.2s;
+    }
+    .google-btn:hover {
+      background: #f5f5f5;
+    }
+    .google-icon {
+      width: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card login-card">
+          <div class="card-body p-4">
+            <h3 class="mb-4 text-center">Login to My Account</h3>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-success">Login</button>
+              </div>
+              <div class="text-center mb-3">or</div>
+              <div class="d-grid">
+                <button type="button" class="btn google-btn">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="google-icon" alt="Google icon">
+                  Continue with Google
+                </button>
+              </div>
+            </form>
+            <div class="mt-3 text-center">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

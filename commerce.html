@@ -1,38 +1,277 @@
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PINOKYO MALL</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- CUSTOM CSS -->
+   <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+
+<body>
+   
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" style="background-color: hsl(26, 88%, 55%);">
+  <div class="container">
+
+    <!-- LEFT POPUP MENU BUTTON -->
+    <button class="btn btn-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftMenu">
+      ☰
+    </button>
+
+    <!-- LOGO / BRAND -->
+    <a class="navbar-brand text-white fw-bold" href="#">shop with pinokyo</a>
+
+    <!-- TOGGLER FOR SMALL DEVICES -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targe  t="#navItems">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAV ITEMS + SEARCH BAR -->
+    <div class="collapse navbar-collapse" id="navItems">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link text-white" href="cart.html"><span><i class="bi bi-cart4" style="color: white;" 
+            data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart"></i></span></a>
+        </li>
+      </ul>
+
+      <!-- SEARCH BAR -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search products...">
+        <button class="btn search-btn" type="submit">Search</button>
+      </form>
     </div>
+
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
+</nav>
+
+<div class="container black-friday-banner text-center py-1 bg-dark text-white">
+  <h1 class="fw-bold mb-2">🔥PINOKYO BLACK FRIDAY MEGA SALE 🔥</h1>
+  <p class="fs-5 mb-0">Up To 70% OFF — Shop Now Before It's Gone!</p>
+</div>
+
+
+<!-- LEFT POPUP MENU (OFFCANVAS) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="leftMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
+
+  <div class="offcanvas-body">
+    <ul class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">HOME</a>
+      <a href="PRODUCT CATEGORY.html" class="list-group-item list-group-item-action">PRODUCT CATEGORY</a>
+      <a href="ABOUT US.html" class="list-group-item list-group-item-action">ABOUT US</a>
+      <a href="LIPA MDOGO MDOGO ACCOUNT.html" class="list-group-item list-group-item-action">LIPA MDOGO MDOGO ACCOUNT</a>
+      <a href="MY ACCOUNT.html" class="list-group-item list-group-item-action">MY ACCOUNT</a>
+      <a href="HELP & SUPPORT.html" class="list-group-item list-group-item-action">HELP &SUPPORT</a>
+      <a href="BUY.html" class="list-group-item list-group-item-action">BUY</a>
+    </ul>
   </div>
 </div>
+ 
+
+<!--CARD FOR ELECTRONICS-->
+<div class="container mt-4">
+  <h3 class="mb-4 text-center">PRODUCTS AVAILABLE</h3>
+
+  <div class="row g-4">
+
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="phones.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Product Name</h5>
+          <p class="card-text">Short description of the product goes here.</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="tripod.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Product Name</h5>
+          <p class="card-text">Short description of the product goes here.</p>
+          <a href="PRODUCT CATEGORY.html" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="1shoes.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">shoes</h5>
+          <p class="card-text">Can be used for both cameras and phones</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="matres.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">matress</h5>
+          <p class="card-text">Can be used for both cameras and phones</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Cards -->
+<div class="container mt-4">
+  <h3 class="mb-4 text-center">CLOTHINGS</h3>
+
+  <div class="row g-4">
+
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="suity.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Short description of the product goes here.</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="tripod.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">shoes</h5>
+          <p class="card-text">Share this product
+
+
+
+Clarks Classic Men's Corporate Office Clarks Loafers Wedding ShoesBlack</p>
+          <a href="PRODUCT CATEGORY.html" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="images.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Tripod Stand</h5>
+          <p class="card-text">Can be used for both cameras and phones</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <img src="shoes.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">shoes for men</h5>
+          <p class="card-text">Can be used for both cameras and phones</p>
+          <a href="#" class="btn btn-primary w-100">View</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+
+ 
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-4 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p class="small">
+          We provide quality products at affordable prices. Shop with confidence!
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Products</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p class="small mb-1">Email: JOHNSONMWITA18@GMAIL.com</p>
+        <p class="small mb-1">Phone: +254 700 000 000</p>
+
+        <!-- Social Icons -->
+        <div class="d-flex gap-3 mt-2">
+          <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center pb-3">
+      <p class="small mb-0">&copy; 2025 Your Website Name. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+</body>
+</html>
+
